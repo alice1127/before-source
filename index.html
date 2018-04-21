@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Input Focus Animation (SVG)</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="al">
+   <div class="header">Sign In</div>
+  <p class="info">By logging in you agree to the ridiculosly long terms that you didn't bother to read </p>
+  
+<div class="container">
+
+<!-- <div class='info'>*Click on the input boxes</div>-->
+ <input id='username' class='text' onfocus="handle2()" onblur="handle3()" class='inc2' type="text" name="Username" placeholder='Username' value="">
+<!-- Had to remove the type "password" due to the browser user credential's autofill-->
+ <input id='password' class='pass' onfocus="handle1()" onblur="handle3()" class='inc1' type="pass" name="Password" placeholder='Password' value="">
+ <button>Submit</button>
+ <svg width="390" height="549" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+    <linearGradient id="myGradient"
+            x1="0%" y1="0%"
+            x2="0%" y2="100%"
+            spreadMethod="pad">
+      <stop offset="0%"   stop-color="#E80C7A" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#E83D9D" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#cc0033" stop-opacity="1"/>
+    </linearGradient>
+</defs>
+      <rect id='rect' class='rect1'   x="15px"  y="120px"   rx="27" ry="27" width="280px" height="50px" style="stroke: url(#myGradient); stroke-width: 4px; fill: #484959" />
+      <rect id='rect1' class='rect3'   x="40px"  y="215px"   rx="27" ry="27" width="235px" height="56px" style="stroke: url(#myGradient); stroke-width: 4px; fill: #484959" />
+</svg>
+</div>
+ 
+ </div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
